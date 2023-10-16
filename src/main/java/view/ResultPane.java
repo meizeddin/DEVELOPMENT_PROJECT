@@ -55,11 +55,12 @@ public class ResultPane extends GridPane {
 		txtFunction = new TextArea();
 		txtFunction.setEditable(false);
 		txtFunction.setPadding(new Insets(10, 10, 10, 10));
-		txtFunction.setMaxSize(500, 250);
+		txtFunction.setMaxSize(700, 250);
 		txtFunction.setPrefSize(500, 250);
 		txtFunction.setStyle("-fx-control-inner-background: #8897b3;"
 				+ "-fx-background-color: linear-gradient(to right, #212838, #c2e3fc);"
 				+ "-fx-text-fill: black; -fx-font-size: 30px;"
+				+ "-fx-font-alignment: center;"
 				);
 		//txtFunction
 

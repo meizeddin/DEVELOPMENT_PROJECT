@@ -467,6 +467,10 @@ public class ManipulationPane extends ScrollPane {
 				ImplyEliminationVisitor visitor = new ImplyEliminationVisitor();
 				result = visitor.canApply(expr);
 			}
+			case "BiConditional Rule" -> {
+				BiConditionalVisitor visitor = new BiConditionalVisitor();
+				result = visitor.canApply(expr);
+			}
 		}
 		return result;
 	}
@@ -544,6 +548,11 @@ public class ManipulationPane extends ScrollPane {
 		return txtResult;
 	}
 
+	//See explaination in the controller
+	public ComboBox getCombo() {
+		return comboBox;
+	}
+
 	/**
 	 * method to attach the buttons event handlers
 	 * @param handler accepts an external handler set by the controller
@@ -554,4 +563,5 @@ public class ManipulationPane extends ScrollPane {
 	public void btnCalcHandler(EventHandler<ActionEvent> handler) {
 		btnCalc.setOnAction(handler);
 	}
+
 }

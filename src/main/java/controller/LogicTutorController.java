@@ -589,12 +589,15 @@ public class LogicTutorController {
 				}
 				// updates the combo box with the appropriate expressions
 				mp.updateComboBox(itemList, expr);
+				// expands the combo box automatically after clicking on update showing the relevant rules.
+				mp.getCombo().show();
 			} else{
 				// outputs an error if no expression is highlighted
 				alertDialogBuilder("Highlight an expression");
 			}
 		}
 	}
+
 
 	/**
 	 * This class handles the event when the update button is clicked in the ManipulationPane.
@@ -703,6 +706,11 @@ public class LogicTutorController {
 						ImplyEliminationVisitor visitor = new ImplyEliminationVisitor();
 						result = expr.accept(visitor);
 						model.updateResult("Using Elimination of =>");
+					}
+					case "BiConditional Rule" -> {
+						BiConditionalVisitor visitor = new BiConditionalVisitor();
+						result = expr.accept(visitor);
+						model.updateResult("Using BiConditional Rule");
 					}
 					case "Select an option.." -> alertDialogBuilder("Select a rule");
 				}

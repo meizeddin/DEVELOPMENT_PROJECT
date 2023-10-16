@@ -42,6 +42,7 @@ public class LogicalFormula implements Serializable{
 		rulesList.add("Elimination of & Left");
 		rulesList.add("Elimination of =>");
 		rulesList.add("Contrapositive Rule");
+		rulesList.add("BiConditional Rule");
 
 	}
 	//methods

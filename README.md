@@ -20,7 +20,7 @@ There are two ways to run the code:
   - Inside the LogicTutor_jar directory, you will also find a savedEvaluations directory and a savedManipulations one: they are used for saving results from the application.
   - Finally, you will also find a DB directory that holds the database, you do not need to touch that. It is used to load test questions onto the application.
 ---
-For any more information contact me on: 
+For any more information, contact me on: 
 -
 Email:
 -       meizeddin@gmail.com

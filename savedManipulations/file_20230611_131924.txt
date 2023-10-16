@@ -1,0 +1,13 @@
+A=>B
+Using Switcheroo Law
+(!(A)|B)
+Using Introduction 
+!B&(!(A)|B)
+Using Distributive Law
+((!(B)&!(A))|(!(B)&B))
+Using Complement Rule
+((!(B)&!(A))|F)
+Using Identity Law
+(!(B)&!(A))
+Using Elimination of & Left
+!(A)
